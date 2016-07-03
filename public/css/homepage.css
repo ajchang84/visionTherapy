@@ -13,7 +13,6 @@ html, body, .container {
   -o-background-size: cover;
   background-size: cover;
   color: white; 
-  height: 60%;
   opacity: 0.8;
   width: 100%;
 }

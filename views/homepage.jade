@@ -12,11 +12,13 @@ block content
       p(class="lead, right")
         a.btn.btn-primary.btn-lg(href='/about', role='button') Learn more
     div.row
-      form(action="/auth/doctorSample", method="post")
-        input(type="hidden", name="user[username]", value="a")
-        input(type="hidden", name="user[password]", value="a")
-        button.btn.btn-primary.btn-lg(type="submit") Sample Doctor Page
-      form(action="/auth/patientSample", method="post")
-        input(type="hidden", name="user[username]", value="a")
-        input(type="hidden", name="user[password]", value="a")
-        button.btn.btn-primary.btn-lg(type="submit") Sample Patient Page
+      div.col-md-2
+        form.form-inline(action="/auth/doctorSample", method="post")
+          input(type="hidden", name="user[username]", value="a")
+          input(type="hidden", name="user[password]", value="a")
+          button.btn.btn-primary.btn-lg(type="submit") Sample Doctor Page
+      div.col-md-2
+        form.form-inline(action="/auth/patientSample", method="post")
+          input(type="hidden", name="user[username]", value="a")
+          input(type="hidden", name="user[password]", value="a")
+          button.btn.btn-primary.btn-lg(type="submit") Sample Patient Page
